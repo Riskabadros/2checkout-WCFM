@@ -1,4 +1,19 @@
 #WCFM Marketplace Custom Payment Gateway Plugin
+
+## Caution
+
+**Please Note:** This plugin is provided as-is and may have certain limitations or issues. While we strive to ensure compatibility and functionality, there could be cases where it may not work as expected or may conflict with other plugins/themes. 
+
+### Known Issues:
+- [List any known issues here]
+
+### Limitations:
+- [List any limitations or constraints here]
+
+## Usage
+
+[Provide instructions on how to use the plugin]
+
 Overview
 This WordPress plugin extends the functionality of the WCFM Marketplace plugin by adding support for a custom payment gateway - TwoCheckout. With this plugin, vendors on your marketplace can easily receive payments through TwoCheckout.
 
