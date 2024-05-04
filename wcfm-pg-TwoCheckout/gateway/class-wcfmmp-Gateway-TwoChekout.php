@@ -4,7 +4,7 @@
     exit;
 }
 
-class WCFMmp_Gateway_TwoCheckout extends WCFMmp_Abstract_Gateway {
+class WCFMmp_Gateway_TwoCheckout extends  {
     public $id;
     public $message = array();
     public $gateway_title;
