@@ -161,13 +161,13 @@ class WCFM_PG_TwoCheckout {
 
     function wcfmmp_custom_pg_vendor_setting($vendor_billing_fileds, $vendor_id) {
         $gateway_slug = $this->token;
-        $gateway_label = __('TwoCheckout', 'wcfm-pg-mobilepay');
+        $gateway_label = __('TwoCheckout', 'wcfm-pg-TwoCheckout');
         $vendor_data = get_user_meta($vendor_id, 'wcfmmp_profile_settings', true);
         $brain_tree = isset($vendor_data['payment'][$gateway_slug]['email']) ? esc_attr($vendor_data['payment'][$gateway_slug]['email']) : '';
 
         $vendor_brain_tree_billing_fileds = array(
             $gateway_slug => array(
-                'label' => $gateway_label . __(' Account', 'wcfm-pg-mobilepay'),
+                'label' => $gateway_label . __(' Account', 'wcfm-pg-TwoCheckout'),
                 'name' => "payment[{$gateway_slug}][email]",
                 'type' => 'text',
                 'class' => 'wcfm-text wcfm_ele paymode_field paymode_' . $gateway_slug,
