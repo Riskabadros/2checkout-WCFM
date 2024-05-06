@@ -4,7 +4,7 @@
     exit;
 }
 
-class WCFMmp_Gateway_TwoCheckout extends WCFMmp_Abstract_Gateway {
+class WCFMmp_Gateway_TwoCheckout  {
     public $id;
     public $message = array();
     public $gateway_title;
@@ -21,7 +21,7 @@ class WCFMmp_Gateway_TwoCheckout extends WCFMmp_Abstract_Gateway {
     public $secret_word;
 
     public function __construct() {
-        $this->id = WCFMpgmp_GATEWAY ;
+        $this->id = WCFMpgmp_GATEWAY;
         $this->gateway_title = __(WCFMpgmp_GATEWAY_LABEL, 'wc-multivendor-marketplace');
         $this->payment_gateway = $this->id;
     }
@@ -54,9 +54,9 @@ class WCFMmp_Gateway_TwoCheckout extends WCFMmp_Abstract_Gateway {
             $this->test_mode = true;
         
             $this->merchant_code = isset( $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_merchant_code'] ) ? $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_merchant_code'] : '';
-           $this->secret_key = isset( $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_key'] ) ? $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_key'] : '';
-           $this->secret_word = isset( $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_word'] ) ? $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_word'] : '';
-        }
+            $this->secret_key = isset( $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_key'] ) ? $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_key'] : '';
+            $this->secret_word = isset( $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_word'] ) ? $WCFMmp->wcfmmp_withdrawal_options[$this->id.'_test_secret_word'] : '';
+       }
 
         if ( $this->validate_request() ) {
             // Updating withdrawal meta
