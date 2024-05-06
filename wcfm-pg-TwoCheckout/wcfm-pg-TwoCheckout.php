@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WCFM Marketplace Vendor Payment - 2checkout
- * Plugin URI: https://github.com/Riskabadros
+ * Plugin URI: https://www.maherbs.com/contact
  * Description: WCFM Marketplace 2checkout vendor payment gateway 
  * Author: Ayoub Rachchad
- * Version: 1.0.0
- * Author URI: https://github.com/Riskabadros
+ * Version: 1.0.1
+ * Author URI: https://maherbs.com
  *
  * Text Domain: wcfm-pg-TwoCheckout 
  * Domain Path: /lang/
@@ -39,5 +39,5 @@ if(!class_exists('WCFM_PG_TwoCheckout')) {
 	include_once( 'core/class-wcfm-pg-TwoCheckout.php' );
 	global $WCFM, $WCFMpgmp, $WCFM_Query;
 	$WCFMpgmp = new WCFM_PG_TwoCheckout( __FILE__ );
-	$GLOBALS['WCFMpgmp'] = $TwoCheckout;
+	$GLOBALS['WCFMpgmp'] = $WCFMpgmp;
 }
